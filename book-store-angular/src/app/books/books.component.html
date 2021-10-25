@@ -1,0 +1,6 @@
+<h2>Список книг</h2>
+<ul class="heroes">
+  <li *ngFor="let book of books">
+    <span class="badge">{{book.id}}</span> {{book.author}} {{book.title}} <span class="badge">{{book.price}}</span>
+  </li>
+</ul>

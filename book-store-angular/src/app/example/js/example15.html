@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Java Script Example</title>
+  <link crossorigin="anonymous" href="bootstrap-5.1.1-dist/css/bootstrap.min.css"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" rel="stylesheet">
+</head>
+<body>
+
+<div style="padding: 40px;">
+  <form class="row g-3 needs-validation" novalidate>
+    <div class="col-md-4">
+      <label class="form-label" for="validationCustom01">Фамилия</label>
+      <input class="form-control" id="validationCustom01" required type="text" value="Сидоров">
+    </div>
+    <div class="col-md-4">
+      <label class="form-label" for="validationCustom02">Имя</label>
+      <input class="form-control" id="validationCustom02" required type="text" value="Петя">
+    </div>
+    <div class="col-12">
+      <button id="saveButton" class="btn btn-primary" type="submit">Сохранить</button>
+    </div>
+    <div class="col-12">
+      <button id="helloButton" class="btn btn-primary" type="submit" onclick ="onHelloButtonClick()">Привет</button>
+    </div>
+    <div class="col-12">
+      <button id="someButton" class="btn btn-primary" type="submit" onclick ="alert('Посмотри и забудь!')">Не стоит так делать!</button>
+    </div>
+  </form>
+</div>
+<script>
+    document.getElementById("saveButton").addEventListener("click", onSaveButtonClick);
+
+    function onSaveButtonClick() {
+        alert("You are going to save: " +
+            document.getElementById("validationCustom02").value + " " +
+            document.getElementById("validationCustom01").value
+        );
+    }
+    function onHelloButtonClick() {
+        alert("Hello!");
+    }
+</script>
+</body>
+</html>

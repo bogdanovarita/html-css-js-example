@@ -1,0 +1,39 @@
+h1 {
+  color: #336699
+}
+
+div.header {
+  background-color: #1b069b;
+  text-align: center;
+  font-size: x-large;
+  color: white;
+  padding: 20px;
+}
+
+div.menu {
+  background-color: #b21e2c;
+  text-align: center;
+  font-size: x-large;
+  color: white;
+  padding: 20px;
+}
+
+div.content {
+  background-color: #c76b3c;
+  text-align: center;
+  font-size: x-large;
+  color: white;
+  padding: 20px;
+}
+
+div.footer {
+  background-color: #64ad3a;
+  text-align: center;
+  font-size: x-large;
+  color: white;
+  padding: 20px;
+}
+
+.container {
+  width: 500px;
+}
